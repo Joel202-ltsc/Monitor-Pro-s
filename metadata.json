@@ -1,0 +1,6 @@
+{
+  "name": "Monitor Pro — Central de Operação e Streams Jovem Pan",
+  "description": "Monitoramento inteligente desenvolvido exclusivamente para a operação técnica, decks, streams, afiliadas e programação musical da rede Jovem Pan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
