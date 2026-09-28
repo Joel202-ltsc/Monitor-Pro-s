@@ -1,6 +1,6 @@
 import { Activity, AudioLines, BookOpen, Download, FileText, Music2, Radio, RefreshCw, Settings2, ShieldCheck } from 'lucide-react';
 
-const releaseUrl = 'https://github.com/Joel202-ltsc/monitorpro-releases/releases/latest';
+const downloadUrl = 'https://github.com/Joel202-ltsc/monitorpro-releases/releases/download/v2026.9.26/Monitor-Pro-Setup-2026.9.26-x64.exe';
 const features = [
   [Radio, 'Monitoramento multi-deck', 'Acompanhe vários streams e decks da operação em uma única tela.'],
   [Music2, 'Identificação musical', 'Música, artista, capa e origem por RDS, Pulsar, catálogo e reconhecimento.'],
@@ -34,7 +34,12 @@ export default function App() {
           <a href="#relatorios">Relatórios</a>
           <a href="#atualizacoes">Atualizações</a>
         </nav>
-        <a className="nav-download" href={releaseUrl} target="_blank" rel="noreferrer">
+        <a
+          className="nav-download"
+          href={downloadUrl}
+          download="Monitor-Pro-Setup-2026.9.26-x64.exe"
+          title="Baixar instalador Monitor Pro para Windows"
+        >
           <Download size={16} /> Baixar
         </a>
       </header>
@@ -52,7 +57,12 @@ export default function App() {
               Monitor Pro centraliza streams, decks, identificação musical, programação, relatórios e eventos técnicos para a operação da Jovem Pan.
             </p>
             <div className="actions">
-              <a className="primary" href={releaseUrl} target="_blank" rel="noreferrer">
+              <a
+                className="primary"
+                href={downloadUrl}
+                download="Monitor-Pro-Setup-2026.9.26-x64.exe"
+                title="Baixar instalador Monitor Pro para Windows"
+              >
                 <Download size={18} /> Baixar para Windows
               </a>
               <a className="secondary" href="#recursos">
@@ -160,8 +170,13 @@ export default function App() {
             <p>
               O próprio Monitor Pro verifica, baixa e instala novas versões. Seus decks e configurações locais são preservados durante a atualização.
             </p>
-            <a className="primary" href={releaseUrl} target="_blank" rel="noreferrer">
-              <Download size={18} /> Ver versão mais recente
+            <a
+              className="primary"
+              href={downloadUrl}
+              download="Monitor-Pro-Setup-2026.9.26-x64.exe"
+              title="Baixar versão mais recente do Monitor Pro"
+            >
+              <Download size={18} /> Baixar versão mais recente
             </a>
           </div>
           <img src="/images/07-atualizacoes-diagnostico.png" alt="Tela de atualizações e diagnóstico" />
@@ -173,7 +188,12 @@ export default function App() {
             <h2>Pronto para acompanhar sua operação?</h2>
             <p>Baixe a versão mais recente do Monitor Pro para Windows.</p>
           </div>
-          <a className="primary" href={releaseUrl} target="_blank" rel="noreferrer">
+          <a
+            className="primary"
+            href={downloadUrl}
+            download="Monitor-Pro-Setup-2026.9.26-x64.exe"
+            title="Baixar instalador Monitor Pro para Windows"
+          >
             Baixar Monitor Pro <Download size={18} />
           </a>
         </section>
